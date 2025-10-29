@@ -1250,8 +1250,10 @@ Now that you understand the flow, try these exercises:
 
 ```bash
 # Clone the repository
-
-pnpm create solana-dapp@latest -t gh:solana-foundation/templates/community/x402-template
+git clone https://github.com/tobySolutions/templates.git
+cd templates
+git checkout feat/add-x402-template
+cd community/x402-template
 
 # Install dependencies
 pnpm install
@@ -1282,7 +1284,7 @@ NEXT_PUBLIC_TREASURY_ADDRESS=CmGgLQL36Y9ubtTsy2zmE46TAxwCBm66onZmPPhUWNqv
 # Session & Facilitator
 NEXT_PUBLIC_COOKIE_NAME=solana_payment_verified
 NEXT_PUBLIC_COOKIE_MAX_AGE=86400
-NEXT_PUBLIC_FACILITATOR_URL=http://localhost:3000/api/facilitator
+NEXT_PUBLIC_FACILITATOR_URL=http://localhost:3001/api/facilitator
 
 # Payment Details
 NEXT_PUBLIC_PAYMENT_SCHEME=exact

@@ -31,7 +31,6 @@
   "dependencies": {
     "@privy-io/react-auth": "^3.8.0",
     "@radix-ui/react-slot": "^1.2.4",
-    "@solana-program/memo": "^0.10.0",
     "@solana/kit": "^5.0.0",
     "@solana/web3.js": "^1.98.4",
     "class-variance-authority": "^0.7.1",

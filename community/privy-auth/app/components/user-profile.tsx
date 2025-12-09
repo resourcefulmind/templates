@@ -3,6 +3,8 @@
 import { usePrivy, useWallets } from "@privy-io/react-auth";
 import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
+import { AccountBalance } from "./examples/account-balance";
+import { SendTransactionExample } from "./examples/send-transaction-example";
 import { Avatar } from "./ui/avatar";
 import { formatAddress } from "@/lib/utils";
 import { Badge } from "./ui/badge";
@@ -196,6 +198,10 @@ export function UserProfile() {
             </p>
           )}
         </div>
+      </div>
+      <div className="grid gap-4 md:grid-cols-2">
+        <AccountBalance />
+        <SendTransactionExample />
       </div>
       {toast && (
         <div className="pointer-events-none fixed bottom-6 right-6 z-50">

@@ -4,6 +4,14 @@ import { PrivyProvider } from "@privy-io/react-auth";
 import { toSolanaWalletConnectors } from "@privy-io/react-auth/solana";
 import { createSolanaRpc, createSolanaRpcSubscriptions } from "@solana/kit";
 
+/**
+ * Configures Privy authentication with Solana support.
+ * - App ID comes from NEXT_PUBLIC_PRIVY_APP_ID (required).
+ * - Embedded wallets are auto-created for users without a wallet (createOnLogin: "users-without-wallets").
+ * - Login methods and wallet behavior can be edited here (loginMethods, embeddedWallets, externalWallets).
+ * - Solana RPCs default to public mainnet/devnet; override via NEXT_PUBLIC_SOLANA_MAINNET_RPC_URL if needed.
+ */
+
 const privyAppId = process.env.NEXT_PUBLIC_PRIVY_APP_ID!;
 
 if (!privyAppId) {
